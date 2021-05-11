@@ -64,8 +64,27 @@ namespace AutomationPracticeTestFramework
                 }
 
             }
+        }
 
+        [Test()]
+        public void GivenHomePage_ClickOnBestSellers_AndMakeSureChiffonDressAppears()
+        {
 
+            using (IWebDriver driver = new ChromeDriver())
+            {
+                driver.Manage().Window.Maximize();
+
+                driver.Navigate().GoToUrl("http://automationpractice.com/");
+
+                IWebElement homePageTabs = driver.FindElement(By.ClassName("blockbestsellers"));
+
+                homePageTabs.Click();
+
+                IWebElement productCollection = driver.FindElement(By.LinkText("Printed Chiffon Dress"));
+
+               //var aa= productCollection.Text;
+                Assert.AreEqual("Printed Chiffon Dress", productCollection.Text);
+            }
         }
     }
 }
