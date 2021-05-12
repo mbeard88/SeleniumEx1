@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AutomationPracticeTestFramework.SeleniumDriverConfig">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAQIAAAAAAABAAAAAAAAAAAAABgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>lib\driver_config\SeleniumDriverConfig.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Driver" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestFramework.AP_HomePage">
+    <Position X="11" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAgAQAAIAAAEAAAA=</HashCode>
+      <FileName>lib\pages\AP_HomePage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SeleniumDriver" />
+      <Property Name="_signinLink" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestFramework.AP_SigninPage">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>lib\pages\AP_SigninPage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SeleniumDriver" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestFramework.AP_WebSite">
+    <Position X="10.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAI=</HashCode>
+      <FileName>lib\AP_WebSite.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AP_HomePage" />
+      <Property Name="AP_SigninPage" />
+      <Property Name="SeleniumDriver" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutomationPracticeTestFramework.AppConfigReader">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>AppConfigReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OpenQA.Selenium.IWebDriver">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="OpenQA.Selenium.IWebElement">
+    <Position X="13" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
